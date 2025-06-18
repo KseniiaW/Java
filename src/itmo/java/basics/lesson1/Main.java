@@ -22,13 +22,13 @@ public class Main {
 
     // Задание 2: Вычисление математических выражений
     public static void calculateExpressions() {
-        System.out.println((46 + 10) * (10 / 3));
+        System.out.println((46 + 10) * ((double)10 / 3));
         System.out.println(29 * 4 * (-15));
     }
 
     // Задание 3: Деление числа
     public static double computeDivision(int number) {
-        return (number / 10) / 10;
+        return (double)(number / 10) / 10;
     }
 
     public static void computeDivision() {
