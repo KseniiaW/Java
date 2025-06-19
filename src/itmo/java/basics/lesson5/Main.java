@@ -14,7 +14,9 @@ public class Main {
 
         // Тестирование метода цензуры
         String text2 = "бяка, не бяка";
-        System.out.println(cens(text2));
+        String wordToCens = "бяка";
+        String wordToReplace = "[вырезано цензурой]";
+        System.out.println(cens(text2, wordToCens, wordToReplace));
 
         // Тестирование метода поиска подстроки
         String mainText = "Это строка, в которой нужно найти количество вхождений подстроки";
@@ -49,8 +51,8 @@ public class Main {
 
     //Задание 3. Метод замены слова "бяка" на "[вырезано цензурой]"
 
-    public static String cens(String text) {
-        return text.replaceAll("бяка", "[вырезано цензурой]");
+    public static String cens(String text, String wordToCens, String wordToReplace) {
+        return text.replaceAll(wordToCens, wordToReplace);
     }
 
     // Задание 4. Метод поиска количества вхождений подстроки
